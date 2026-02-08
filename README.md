@@ -245,9 +245,9 @@ Telegram: @bgltsvvv
 GitHub: bgltsvvv
 
 Ссылки проекта  
-Портфолио: <a src="https://github.com/bgltsvvv">гит</a>
+Портфолио: [гит](https://github.com/bgltsvvv)  
 
-Демо: <a src="https://github.com/bgltsvvv">Демо</a>
+Демо: [Демо](https://bgltsvvv.github.io/gtd_web_app/)  
 
 --- 
 <h2 align="center">
