@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Done - GTD Система</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Левая панель -->
+        <aside class="sidebar">
+            <div class="logo" id="logo">
+                <i class="fas fa-check-circle"></i>
+                <span>Think Done</span>
+                <button id="theme-toggle">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <nav class="categories">
+                <button class="category-btn active" data-category="inbox">
+                    <span class="indicator"></span>
+                    <i class="fas fa-inbox"></i>
+                    <span class="btn-text">Inbox</span>
+                </button>
+                
+                <button class="category-btn" data-category="next">
+                    <span class="indicator"></span>
+                    <i class="fas fa-forward"></i>
+                    <span class="btn-text">Next</span>
+                </button>
+                
+                <button class="category-btn" data-category="project">
+                    <span class="indicator"></span>
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="btn-text">Project</span>
+                </button>
+                
+                <button class="category-btn" data-category="wait">
+                    <span class="indicator"></span>
+                    <i class="fas fa-clock"></i>
+                    <span class="btn-text">Wait</span>
+                </button>
+                
+                <button class="category-btn" data-category="delegation">
+                    <span class="indicator"></span>
+                    <i class="fas fa-user-friends"></i>
+                    <span class="btn-text">Delegation</span>
+                </button>
+                
+                <button class="category-btn" data-category="someday">
+                    <span class="indicator"></span>
+                    <i class="fas fa-calendar-plus"></i>
+                    <span class="btn-text">Someday</span>
+                </button>
+                
+                <button class="category-btn" data-category="calendar">
+                    <span class="indicator"></span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="btn-text">Calendar</span>
+                </button>
+                
+                <button class="category-btn" data-category="howto">
+                    <span class="indicator"></span>
+                    <i class="fas fa-question-circle"></i>
+                    <span class="btn-text">How GTD Works</span>
+                </button>
+            </nav>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-count" id="total-tasks">0</span>
+                    <span class="stat-label">Всего задач</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" id="completed-tasks">0</span>
+                    <span class="stat-label">Выполнено</span>
+                </div>
+            </div>
+
+            <!-- Компактные контакты -->
+            <div class="compact-contacts">
+                <div class="contact-title">Контакты разработчика</div>
+                <div class="contact-items">
+                    <a href="mailto:begletsov.00@mail.ru" class="contact-item" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://t.me/bgltsvvv" target="_blank" class="contact-item" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://github.com/bgltsvvv" target="_blank" class="contact-item" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Основная панель -->
+        <main class="main-content">
+            <!-- Контент будет рендериться динамически -->
+            <div class="welcome-screen">
+                <div class="welcome-content">
+                    <div class="welcome-logo">
+                        <i class="fas fa-check-circle"></i>
+                        <h1>Think Done</h1>
+                    </div>
+                    <!-- Контент будет рендериться динамически -->
+                    <div class="welcome-text">
+                        <h2>Добро пожаловать в GTD-систему</h2>
+                        <p>Организуйте свои задачи и проекты с помощью проверенной методологии <strong>Getting Things Done</strong>.</p>
+                    </div>
+                    
+                    <div class="welcome-features">
+                        <div class="feature">
+                            <i class="fas fa-inbox"></i>
+                            <h4>Inbox</h4>
+                            <p>Собирайте все входящие идеи</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4>Календарь</h4>
+                            <p>Планируйте задачи по дням</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>Drag & Drop</h4>
+                            <p>Перетаскивайте задачи между категориями</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-moon"></i>
+                            <h4>Темная тема</h4>
+                            <p>Работайте в удобном режиме</p>
+                        </div>
+                    </div>
+                    
+                    <div class="welcome-quick-stats">
+                        <div class="stat-box">
+                            <span class="stat-number" id="welcome-total-tasks">0</span>
+                            <span class="stat-label">Всего задач</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" id="welcome-completed-tasks">0</span>
+                            <span class="stat-label">Выполнено</span>
+                        </div>
+                    </div>
+                    
+                    <button class="start-btn" id="start-btn">
+                        <i class="fas fa-play"></i> Начать работу
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
