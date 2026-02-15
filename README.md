@@ -2,7 +2,9 @@
 
 <div align="center"> <img src="https://img.shields.io/badge/GTD-Getting%20Things%20Done-blue" alt="GTD"> <img src="https://img.shields.io/badge/Адаптивный-✓-green" alt="Адаптивный"> <img src="https://img.shields.io/badge/Тёмная%20тема-✓-black" alt="Тёмная тема"> <img src="https://img.shields.io/badge/Перетаскивание-✓-orange" alt="Drag & Drop"> <br><br> <strong>Приложение для продуктивности на основе методологии Дэвида Аллена "Getting Things Done"</strong> </div>
 
-[WEB VERSION](https://bgltsvvv.github.io/gtd_web_app/)
+
+
+   [                  CLICK TO VIEW                     ](https://bgltsvvv.github.io/gtd_web_app/)
 
 
 ---
